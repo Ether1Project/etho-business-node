@@ -35,7 +35,12 @@ curl -X POST  -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","meth
 ```
 
 ## Upload Sample Application 
-You will need to have latest version of NPM/NodeJS installed
+You will need to have NPM/NodeJS installed
+```
+sudo apt install nodejs
+sudo apt install npm
+```
+### Installing Dependencies & Running Sample Application
 ```
 cd etho-upload-gateway/sample
 npm install
