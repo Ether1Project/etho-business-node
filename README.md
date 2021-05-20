@@ -35,7 +35,7 @@ curl -X POST  -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","meth
 ```
 
 ## Upload Sample Application 
-You will need to have NPM/NodeJS installed
+You will need to wait for Etho Protocol node to be fully synced and have NPM/NodeJS installed
 ```
 sudo apt install nodejs
 sudo apt install npm
