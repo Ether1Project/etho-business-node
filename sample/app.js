@@ -6,7 +6,6 @@ const connections = {
 const ethofs = ethofsSDK('yourETHOPrivateKey', connections);
 const fs = require('fs');
 const readableStreamForFile = fs.createReadStream('./testFile.txt');
-const readableStreamForFolder = fs.createReadStream('./testDirectory');
 const options = {
     ethofsData: {
         name: 'MyCustomUploadName',
@@ -21,13 +20,13 @@ const options = {
     }
 };
 
-ethofs.testAuthentication().then((result) => {
+/*ethofs.testAuthentication().then((result) => {
     //handle successful authentication here
     console.log(result);
 }).catch((err) => {
     //handle error here
     console.log(err);
-});
+});*/
 
 /*ethofs.networkStats().then((result) => {
     //handle results here
