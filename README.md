@@ -1,28 +1,28 @@
-# etho-upload-gateway
-Etho Protocol Upload Gateway Deployment
+# etho-business-node
+Etho Protocol Business Node (Upload Gateway) Deployment
 
 <div class="bg-gray-dark">
 <img src="https://github.com/Ether1Project/Ether-1-Branding/raw/master/PNG%20Logos/ethoProtocolBlack.png" width="200" />
 </div>
 
-# Etho Protocol Upload Gateway Deployment
+# Etho Protocol Business Node Deployment
 
 Deployment Instructions/Scripting For a Local/Decentralized Upload Gateway [Etho Protocol](https://ethoprotocol.com)
 
 ## Installation/Deplopyment
 ```
 // Clone the deployment repo
-git clone https://github.com/Ether1Project/etho-upload-gateway.git
+git clone https://github.com/Ether1Project/etho-business-node.git
 
 // Execute deployment script (you will need sudo credentials during deployment to create system services)
-chmod +x etho-upload-gateway/deploy.sh
-./etho-upload-gateway/deploy.sh
+chmod +x etho-business-node/deploy.sh
+./etho-business-node/deploy.sh
 ```
 
 ## Testing Deployment
 ```
 // Check that Etho Protocol node system service is running
-sudo systemctl status ethern1ode
+sudo systemctl status ether1node
 
 // Check that IPFS API node system service is running
 sudo systemctl status ipfs
@@ -35,14 +35,14 @@ curl -X POST  -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","meth
 ```
 
 ## Upload Sample Application 
-You will need to have NPM/NodeJS installed
+You will need to wait for Etho Protocol node to be fully synced and have NPM/NodeJS installed
 ```
 sudo apt install nodejs
 sudo apt install npm
 ```
 ### Installing Dependencies & Running Sample Application
 ```
-cd etho-upload-gateway/sample
+cd etho-business-node/sample
 npm install
 npm run start
 ```
