@@ -1,0 +1,15 @@
+{
+  "name": "ethofs-sdk-sample",
+  "version": "1.0.0",
+  "description": "Sample Application For Etho Protocol Uploads",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethofs/sdk": "^1.0.10"
+  }
+}
